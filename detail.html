@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Detail Buku</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">SecondPage</div>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="katalog.html">Buku</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li>
+  <a href="keranjang.html" class="cart-icon">
+    🛒 <span id="cartCount">0</span>
+  </a>
+</li>
+    </ul>
+  </nav>
+
+
+<!-- DETAIL PRODUK -->
+<section class="detail-wrapper">
+
+  <div class="detail-card">
+    
+    <button onclick="history.back()" class="btn-back">✖</button>
+
+    <div class="detail-img">
+      <img id="mainImg" class="img1">
+      <div class="thumbs">
+        <img id="thumb1" class="img1">
+        <img id="thumb2" class="img2">
+      </div>
+    </div>
+
+<div class="detail-info">
+  <h1 id="judul"></h1>
+  <p class="harga" id="harga"></p>
+  <p><b>Penulis :</b> <span id="penulis"></span></p>
+  <p><b>Kondisi :</b> <span id="kondisi"></span></p>
+
+  <div class="bottom-area">
+    <p class="info-wa">
+      Klik tombol di bawah untuk langsung pesan via WhatsApp 📲
+    </p>
+
+    <div class="button-group">
+      <a id="waLink" class="btn">Beli via WhatsApp</a>
+      <button onclick="tambahKeranjang()" class="btn">🛒</button>
+    </div>
+  </div>
+</div>
+  
+
+  </div>
+
+</section>
+
+<script src="detail.js"></script>
+<script src="global.js"></script>
+</body>
+</html>

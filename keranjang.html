@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Keranjang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">SecondPage</div>
+  <ul>
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="katalog.html">Buku</a></li>
+    <li><a href="tentang.html">Tentang</a></li>
+   <li>
+  <a href="keranjang.html" class="cart-icon">
+    🛒 <span id="cartCount">0</span>
+  </a>
+</li>
+  </ul>
+</nav>
+
+<section style="padding:40px;">
+  <h1>Keranjang</h1>
+  <div id="listKeranjang"></div>
+  <div style="margin-top:20px;">
+</div>
+<div class="checkout-bar">
+  <div>
+    <p>Total</p>
+    <h3 id="totalHarga"></h3>
+  </div>
+  <button onclick="checkoutWA()" class="btn">Checkout</button>
+</div>
+</section>
+
+<script src="keranjang.js"></script>
+<script src="global.js"></script>
+</body>
+</html>
